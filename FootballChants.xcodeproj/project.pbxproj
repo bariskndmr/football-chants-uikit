@@ -36,6 +36,7 @@
 		046D471D2CD12CC500B84BBF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D471C2CD12CC500B84BBF /* Team.swift */; };
 		046D471F2CD12CFF00B84BBF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D471E2CD12CFF00B84BBF /* Manager.swift */; };
 		046D47222CD12D4E00B84BBF /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */; };
+		046D47252CD16B4500B84BBF /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47242CD16B4500B84BBF /* TeamTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		046D471C2CD12CC500B84BBF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		046D471E2CD12CFF00B84BBF /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		046D47242CD16B4500B84BBF /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		046D46D72CD0FAFA00B84BBF /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				046D47232CD16B2B00B84BBF /* Views */,
 				046D47212CD12D4E00B84BBF /* ViewModel */,
 				046D471B2CD12C6700B84BBF /* Models */,
 				046D47182CD1053800B84BBF /* ViewControllers */,
@@ -174,6 +177,14 @@
 				046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		046D47232CD16B2B00B84BBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046D47242CD16B4500B84BBF /* TeamTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				046D47222CD12D4E00B84BBF /* TeamsViewModel.swift in Sources */,
 				046D471F2CD12CFF00B84BBF /* Manager.swift in Sources */,
 				046D47172CD0FEA600B84BBF /* Teams.swift in Sources */,
+				046D47252CD16B4500B84BBF /* TeamTableViewCell.swift in Sources */,
 				046D46D92CD0FAFA00B84BBF /* AppDelegate.swift in Sources */,
 				046D471D2CD12CC500B84BBF /* Team.swift in Sources */,
 				046D46DB2CD0FAFA00B84BBF /* SceneDelegate.swift in Sources */,
