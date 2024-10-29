@@ -33,6 +33,9 @@
 		046D47162CD0FEA600B84BBF /* wolves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 046D47002CD0FEA600B84BBF /* wolves.mp3 */; };
 		046D47172CD0FEA600B84BBF /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47022CD0FEA600B84BBF /* Teams.swift */; };
 		046D471A2CD1054800B84BBF /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47192CD1054800B84BBF /* ChantsViewController.swift */; };
+		046D471D2CD12CC500B84BBF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D471C2CD12CC500B84BBF /* Team.swift */; };
+		046D471F2CD12CFF00B84BBF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D471E2CD12CFF00B84BBF /* Manager.swift */; };
+		046D47222CD12D4E00B84BBF /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		046D47002CD0FEA600B84BBF /* wolves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wolves.mp3; sourceTree = "<group>"; };
 		046D47022CD0FEA600B84BBF /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		046D47192CD1054800B84BBF /* ChantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantsViewController.swift; sourceTree = "<group>"; };
+		046D471C2CD12CC500B84BBF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		046D471E2CD12CFF00B84BBF /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 		046D46D72CD0FAFA00B84BBF /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				046D47212CD12D4E00B84BBF /* ViewModel */,
+				046D471B2CD12C6700B84BBF /* Models */,
 				046D47182CD1053800B84BBF /* ViewControllers */,
 				046D46D82CD0FAFA00B84BBF /* AppDelegate.swift */,
 				046D46DA2CD0FAFA00B84BBF /* SceneDelegate.swift */,
@@ -149,6 +157,23 @@
 				046D47192CD1054800B84BBF /* ChantsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		046D471B2CD12C6700B84BBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				046D471C2CD12CC500B84BBF /* Team.swift */,
+				046D471E2CD12CFF00B84BBF /* Manager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		046D47212CD12D4E00B84BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				046D471A2CD1054800B84BBF /* ChantsViewController.swift in Sources */,
+				046D47222CD12D4E00B84BBF /* TeamsViewModel.swift in Sources */,
+				046D471F2CD12CFF00B84BBF /* Manager.swift in Sources */,
 				046D47172CD0FEA600B84BBF /* Teams.swift in Sources */,
 				046D46D92CD0FAFA00B84BBF /* AppDelegate.swift in Sources */,
+				046D471D2CD12CC500B84BBF /* Team.swift in Sources */,
 				046D46DB2CD0FAFA00B84BBF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
