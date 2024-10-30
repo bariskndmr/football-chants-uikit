@@ -23,6 +23,8 @@ final class ChantsViewController: UIViewController {
     return table
   }()
   
+  private lazy var teamsViewModel = TeamsViewModel()
+  
   // MARK: - LifeCycle
   
   override func loadView() {
@@ -42,6 +44,9 @@ final class ChantsViewController: UIViewController {
 private extension ChantsViewController {
   
   func setup() {
+    
+    self.navigationController?.navigationBar.topItem?.title = "Football Chants"
+    self.navigationController?.navigationBar.prefersLargeTitles = true
     
     tableView.dataSource = self
     
@@ -63,13 +68,15 @@ private extension ChantsViewController {
 extension ChantsViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return teamsViewModel.teams.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: TeamTableViewCell.cellID, for: indexPath) as? TeamTableViewCell 
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: TeamTableViewCell.cellID, for: indexPath) as? TeamTableViewCell
     else { return UITableViewCell() }
-    cell.configure()
+    let team = teamsViewModel.teams[indexPath.row]
+    
+    cell.configure(with: team)
     
     return cell
   }

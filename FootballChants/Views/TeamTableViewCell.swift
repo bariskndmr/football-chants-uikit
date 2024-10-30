@@ -94,22 +94,26 @@ class TeamTableViewCell: UITableViewCell {
   
   // MARK: - Configurations
   
-  func configure()  {
+  func configure(with team: Team)  {
     
-    containerView.backgroundColor = TeamType.arsenal.background
+    containerView.backgroundColor = team.id.background
     
-    badgeImageView.image = TeamType.arsenal.badge
+    badgeImageView.image = team.id.badge
     
-    let playBackButtonImage = UIImage(
+    let playButtonImage = UIImage(
       systemName: "play.circle.fill",
       withConfiguration: UIImage.SymbolConfiguration(pointSize: 32))
     
-    playBackButton.setImage(playBackButtonImage, for: .normal)
+    let pauseButtonImage = UIImage(
+      systemName: "pause.circle.fill",
+      withConfiguration: UIImage.SymbolConfiguration(pointSize: 32))
     
-    nameLabel.text = "Arsenal"
-    foundedLabel.text = "1880"
-    jobLabel.text = "Mikel Arteta"
-    infoLabel.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    playBackButton.setImage(team.isPlaying ? pauseButtonImage : playButtonImage, for: .normal)
+    
+    nameLabel.text = team.name
+    foundedLabel.text = team.founded
+    jobLabel.text = "Current \(team.manager.job.rawValue) : \(team.manager.name)"
+    infoLabel.text = team.info
     
     self.contentView.addSubview(containerView)
     
