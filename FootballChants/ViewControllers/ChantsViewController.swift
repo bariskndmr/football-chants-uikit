@@ -76,9 +76,20 @@ extension ChantsViewController: UITableViewDataSource {
     else { return UITableViewCell() }
     let team = teamsViewModel.teams[indexPath.row]
     
-    cell.configure(with: team)
+    cell.configure(with: team, delegate: self)
     
     return cell
+  }
+  
+}
+
+// MARK: - TeamTableViewCellDelegate
+
+extension ChantsViewController: TeamTableViewCellDelegate {
+  
+  func didTapPlayback(for team: Team) {
+    teamsViewModel.togglePlayback(for: team)
+    tableView.reloadData()
   }
   
 }
