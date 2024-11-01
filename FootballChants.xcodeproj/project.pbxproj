@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045C3E132CD55D8900CEC8C9 /* AudioManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C3E122CD55D8900CEC8C9 /* AudioManagerViewModel.swift */; };
 		046D46D92CD0FAFA00B84BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D46D82CD0FAFA00B84BBF /* AppDelegate.swift */; };
 		046D46DB2CD0FAFA00B84BBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D46DA2CD0FAFA00B84BBF /* SceneDelegate.swift */; };
 		046D46E02CD0FAFA00B84BBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 046D46DF2CD0FAFA00B84BBF /* Base */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045C3E122CD55D8900CEC8C9 /* AudioManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerViewModel.swift; sourceTree = "<group>"; };
 		046D46D52CD0FAFA00B84BBF /* FootballChants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballChants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046D46D82CD0FAFA00B84BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046D46DA2CD0FAFA00B84BBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				046D47202CD12D4E00B84BBF /* TeamsViewModel.swift */,
+				045C3E122CD55D8900CEC8C9 /* AudioManagerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				046D47222CD12D4E00B84BBF /* TeamsViewModel.swift in Sources */,
 				046D471F2CD12CFF00B84BBF /* Manager.swift in Sources */,
 				046D47172CD0FEA600B84BBF /* Teams.swift in Sources */,
+				045C3E132CD55D8900CEC8C9 /* AudioManagerViewModel.swift in Sources */,
 				046D47252CD16B4500B84BBF /* TeamTableViewCell.swift in Sources */,
 				046D46D92CD0FAFA00B84BBF /* AppDelegate.swift in Sources */,
 				046D471D2CD12CC500B84BBF /* Team.swift in Sources */,
